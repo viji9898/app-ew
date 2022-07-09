@@ -7,7 +7,7 @@ export const NavBar = () => {
       <Col span={24} style={{ margin: "10px" }}>
         <Link to="/">
           <img
-            src="https://app-viji.s3.eu-west-2.amazonaws.com/viji-navbar-logo.svg"
+            src="https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-ew-lk/logo/East+West+Logo+Anchor.svg"
             alt="viji logo for navbar"
             height={"25px"}
           />

@@ -1,17 +1,20 @@
-import { Button, Col, Row, Space } from "antd";
+import { Col, Row, Space } from "antd";
 import { Link } from "react-router-dom";
 
 export const Homepage = ({ text }) => {
   const socialMediaLinks = [
-    { type: "Linkedin", url: "https://www.linkedin.com/in/vijiw/" },
-    { type: "GitHub", url: "https://github.com/viji9898" },
-    { type: "Instagram", url: "https://www.instagram.com/viji9898/" },
-    { type: "Twitter", url: "https://twitter.com/VijiNotes" },
-    { type: "Medium", url: "https://medium.com/@vijiw" },
+    {
+      type: "Linkedin",
+      url: "https://www.linkedin.com/company/east-west-properties-plc/",
+    },
+    // { type: "GitHub", url: "https://github.com/viji9898" },
+    // { type: "Instagram", url: "https://www.instagram.com/viji9898/" },
+    // { type: "Twitter", url: "https://twitter.com/VijiNotes" },
+    // { type: "Medium", url: "https://medium.com/@vijiw" },
   ];
 
   const listSocialMediaLinks = socialMediaLinks.map((socialMedia, index) => {
-    if (index === 4) {
+    if (index === 0) {
       return (
         <a href={socialMedia.url} target={"_blank"} rel={"noreferrer"}>
           {socialMedia.type}
@@ -30,13 +33,13 @@ export const Homepage = ({ text }) => {
     <div style={{ margin: "10px" }}>
       <Row justify="center" style={{ marginBottom: "10px" }}>
         <Col span={24} style={{ textAlign: "center" }}>
-          <Link to={"/qr-codes"}>
+          <Link to={"/"}>
             <img
               src={
-                "https://app-viji.s3.eu-west-2.amazonaws.com/profile-pictures/profile-pic+(8).png"
+                "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-ew-lk/logo/East+West+Properties+PLC.svg"
               }
               width={"350px"}
-              alt="ninja dressed in black holding a laptop and coding"
+              alt="East West Properties anchor Logo in blue with text east west properties"
             />
           </Link>
         </Col>
@@ -48,49 +51,7 @@ export const Homepage = ({ text }) => {
       </Row>
       <br></br>
       <Row justify="center">
-        <Col style={{ textAlign: "center" }}>
-          <p>
-            <strong>My Work:</strong>
-          </p>
-          <p>💡 upward mobility through coding 💡</p>
-        </Col>
-      </Row>
-      <Row justify="center">
-        <Col style={{ textAlign: "center" }}>
-          <ul style={{ listStyle: "none", padding: "0px" }}>
-            <li>'08 🎓 Graduated Imperial College & moved to 🇱🇰 Sri Lanka</li>
-            <li>'09 🎧 Setup a radio station 🎶</li>
-            <li>'12-18 🏨 Built 🏗 a Marriott Hotel 👷🏾</li>
-            <li>'15 I 🥰 met Chantal ♡ + ♡</li>
-            <li>
-              '19 💲 Hotel Sold 🥳 and we moved to 🇺🇸 Boston - Go Patriots!!{" "}
-              <Link to="/projects">🏈</Link>
-            </li>
-            <br></br>
-            <li>⏸️ time to reflect on the next move</li>
-            <li>▶️ next adventure 💡 Tech 💡</li>
-            <br></br>
-            <li>'20 - Learned to Code - thanks folks at Launch Academy</li>
-            <li>
-              '21 - Having an IMPACT teaching and building products at{" "}
-              {`<code>YourFuture`}
-            </li>
-            <li>
-              '22 - Building out{" "}
-              <Button
-                style={{ margin: "0px", padding: "0px" }}
-                target={"_blank"}
-                rel={"noreferer"}
-                href="https://techhq.lk"
-                type="link"
-              >
-                TechHQ.lk
-              </Button>{" "}
-              - a tech focused recruitment platform in Sri Lanka
-            </li>
-            <li>{text}</li>
-          </ul>
-        </Col>
+        <Col style={{ textAlign: "center" }}></Col>
       </Row>
     </div>
   );
